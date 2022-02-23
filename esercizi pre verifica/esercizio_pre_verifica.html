@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="esercizio_pre_verifica.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Commento Soggiorno</legend>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="data">Data inizio soggiorno</label>
+            <input type="date" name="data" id="data">
+            <br>
+            <label for="giorni">Numero di giorni</label>
+            <input type="number" value="" id="giorni" name="giorni">
+            <br>
+            <label for="vacanza">Tipologia di vacanza</label>
+            <select name="vacanza" id="vacanza">
+                <option value="1" name="vacanza" id="vacanza">businnes</option>
+                <option value="2" name="vacanza" id="vacanza">privata</option>
+            </select>
+            <br>
+            <label for="persone">Numero di persone</label>
+            <input type="number" value="" id="persone" name="persone">
+            <br>
+            <label for="note">Commento</label>
+            <textarea name="note" id="note" cols="30" rows="10" value=""></textarea>
+        </fieldset>
+        <input type="submit" value="invia">
+    </form>
+    <a href="" exportparts="nome"></a>
+</body>
+</html>

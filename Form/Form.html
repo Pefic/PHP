@@ -1,0 +1,114 @@
+<!-- Menu principale
+2021-2022 IFTS "TECNICO PER LA PROGETTAZIONE E LO SVILUPPO DI APPLICAZIONI INFORMATICHE"
+Form
+Claudia Chiusoli
+•
+15:56
+
+form.html
+HTML
+Commenti sul corso
+
+Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    
+    <style>
+        body{
+            color:#333333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>    
+    <!-- <form action="invia-dati.php" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <label for="nome">nome</label>
+            <input type="text">
+            <label for="cognome">cognome</label>
+            <input type="text">
+            <input type="submit">
+        </fieldset>
+    </form> -->
+    <a href="http://localhost/IFTS/Form/invia-dati.php?nome=&cognome=&citta=&lavoro=&hobby=&sesso=m&gatto=on&abitazione=1&cap=47921&localita=Rimini&indirizzo=&documentoIdentita=&foto=&carta=&pdf=">Link con query strong</a>
+    <form action="invia-dati.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <label for="nome">nome</label>
+            <input type="text" name="nome" id="nome">
+            <label for="cognome">cognome</label>
+            <input type="text" name="cognome" id="cognome">
+            <label for="citta">cita</label>
+            <input type="text" name="citta" id="citta">
+            <label for="lavoro">lavoro</label>
+            <input type="text" name="lavoro" id="lavoro">
+            <label for="hobby">hobby</label>
+            <input type="text" name="hobby" id="hobby">
+
+        </fieldset>
+        <fieldset>
+            <legend>Sesso</legend>
+            M <input type="radio" name="sesso" id="sesso" value="m" checked>
+            F <input type="radio" name="sesso" id="sesso" value="f">
+        </fieldset>
+        <fieldset>
+            <legend>Animali Preferiti</legend>
+            <label for="gatto">Gatto</label>
+            <input type="checkbox" name="gatto" id="gatto" checked>
+            <label for="cane">Cane</label>
+            <input type="checkbox" name="cane" id="cane">
+            <label for="cavallo">Cavallo</label>
+            <input type="checkbox" name="cavallo" id="cavallo">
+            <label for="mucca">Mucca</label>
+            <input type="checkbox" name="mucca" id="mucca">
+        </fieldset>
+        <label for="abitazione">Tipo di Abitazione</label>
+        <select name="abitazione" id="abitazione" tabindex="3">
+            <optgroup label="casa indipendente">
+                <option value="1">villa a schiera</option>
+                <option value="2">casa unifamiliare</option>
+                <option value="3">bifamiliare</option>
+            </optgroup>
+            <optgroup label="condominio">
+                <option value="4">condominio <= 5 unità</option>
+                <option value="5">condominio > 5 unità</option>
+            </optgroup>
+        </select>
+        <fieldset>
+            <legend>Dati Residenza</legend>
+            <label for="cap">Cap:</label>
+            <input type="text" name="cap" id="cap" readonly value="47921">
+            <label for="localita">Localita</label>
+            <input type="text" name="localita" id="localita" value="Rimini">
+            <label for="indirizzo">Indirizzo:</label>
+            <input type="text" name="indirizzo" id="indirizzo" autocomplete="off">
+        </fieldset> 
+        <fieldset>
+            <legend>Carica File</legend>
+            <div>
+                <input type="file" name="documentoIdentita" 
+                id="documentoIdentita"> 
+            </div>     
+            <div>
+                <input type="file" name="foto" 
+                id="foto"> 
+            </div>     
+            <div>
+                <input type="file" name="carta" 
+                id="carta">
+            </div>     
+            <div>
+                <input type="file" name="pdf" 
+                id="pdf">
+            </div>     
+        </fieldset>
+        <input type="submit" value="invia">
+        </form>
+</body>
+</html>
+form.html
+Visualizzazione di form.html.
