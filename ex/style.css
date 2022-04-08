@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#main-container{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container{
+    width: 50%;
+}
+
+.button-border{
+    margin: 10px 0px 20px 0px;
+    border: 1px solid #0d6efd;
+    border-radius: 15px;
+}
+
+.button-link{
+    color: white;
+    text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.search-bar{
+    /* align-self: center; */
+    width: 300px;
+    height: 30px;
+    margin: 0px 0px 20px 0px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.list-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+table{
+    align-self: center;
+}
+
+th,tr{
+    width:200px;
+    padding:10px;
+    text-align:center;
+}
+
+th > a{
+    color: blueviolet;
+}
